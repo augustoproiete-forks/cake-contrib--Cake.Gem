@@ -43,7 +43,7 @@ namespace Cake.Gem
         /// <returns>The tool executable name.</returns>
         protected sealed override IEnumerable<string> GetToolExecutableNames()
         {
-            return new[] { "gem.cmd", "gem" };
+            return new[] { "gem.bat", "gem" };
         }
 
         /// <summary>
