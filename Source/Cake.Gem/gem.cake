@@ -2,6 +2,7 @@
 
 try
 {
+    GemBuild("./../../../../Examples/testgem/testgem.gemspec");
 }
 catch(Exception ex)
 {
