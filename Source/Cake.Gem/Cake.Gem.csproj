@@ -54,6 +54,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Build\GemBuildArgumentBuilder.cs" />
+    <Compile Include="Build\GemBuildRunner.cs" />
+    <Compile Include="Build\GemBuildSettings.cs" />
+    <Compile Include="GemAliases.cs" />
+    <Compile Include="GemArgumentBuilder.cs" />
+    <Compile Include="GemSettings.cs" />
+    <Compile Include="GemTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

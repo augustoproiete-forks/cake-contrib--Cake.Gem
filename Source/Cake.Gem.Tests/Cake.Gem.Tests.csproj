@@ -70,10 +70,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fixtures\GemBuildRunnerFixture.cs" />
+    <Compile Include="GemBuildRunnerTests.cs" />
+    <Compile Include="GemFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cake.Gem\Cake.Gem.csproj">
+      <Project>{01408fad-c1dc-4856-9750-71eccc26e432}</Project>
+      <Name>Cake.Gem</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\gep13.xUnitRunner.0.1.0\build\gep13.xUnitRunner.targets" Condition="Exists('..\packages\gep13.xUnitRunner.0.1.0\build\gep13.xUnitRunner.targets')" />
