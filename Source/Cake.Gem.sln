@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppVeyor", "AppVeyor", "{8076D16C-BD95-49E8-A0F6-CCBF12FD8657}"
+	ProjectSection(SolutionItems) = preProject
+		..\appveyor.yml = ..\appveyor.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScripts", "{488C2764-3E29-4E41-A617-F006DEEB8A16}"
+	ProjectSection(SolutionItems) = preProject
+		..\build.cake = ..\build.cake
+		..\build.ps1 = ..\build.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{2D933585-3E6C-4910-B08C-09C790C51B83}"
+	ProjectSection(SolutionItems) = preProject
+		..\tools\packages.config = ..\tools\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Gem", "Cake.Gem\Cake.Gem.csproj", "{01408FAD-C1DC-4856-9750-71ECCC26E432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Gem.Tests", "Cake.Gem.Tests\Cake.Gem.Tests.csproj", "{128B7497-60F4-404C-9F47-F4B7F1716EF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01408FAD-C1DC-4856-9750-71ECCC26E432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01408FAD-C1DC-4856-9750-71ECCC26E432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01408FAD-C1DC-4856-9750-71ECCC26E432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01408FAD-C1DC-4856-9750-71ECCC26E432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128B7497-60F4-404C-9F47-F4B7F1716EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128B7497-60F4-404C-9F47-F4B7F1716EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128B7497-60F4-404C-9F47-F4B7F1716EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128B7497-60F4-404C-9F47-F4B7F1716EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
