@@ -12,6 +12,22 @@ namespace Cake.Gem
     public static class GemAliases
     {
         /// <summary>
+        /// Builds the gem using the path to the gemspec file.
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// <param name="gemSpecFilePath">The path to the gemspec file.</param>
+        /// <example>
+        /// <code>
+        /// GemBuild("test.gemspec");
+        /// </code>
+        /// </example>
+        [CakeMethodAlias]
+        public static void GemBuild(this ICakeContext context, FilePath gemSpecFilePath)
+        {
+            GemBuild(context, gemSpecFilePath, new GemBuildSettings());
+        }
+
+        /// <summary>
         /// Builds the gem using the path to the gemspec file and any additional settings.
         /// </summary>
         /// <param name="context">The context.</param>
