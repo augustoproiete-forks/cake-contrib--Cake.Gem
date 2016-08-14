@@ -7,7 +7,7 @@ namespace Cake.Gem.Tests
         where TSettings : ToolSettings, new()
     {
         protected GemFixture()
-            : base("gem.cmd")
+            : base("gem.bat")
         {
         }
     }

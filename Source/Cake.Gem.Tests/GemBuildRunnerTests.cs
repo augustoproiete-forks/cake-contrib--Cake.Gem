@@ -42,8 +42,8 @@ namespace Cake.Gem.Tests
             }
 
             [Theory]
-            [InlineData("/bin/tools/Gem/gem.cmd", "/bin/tools/Gem/gem.cmd")]
-            [InlineData("./tools/Gem/gem.cmd", "/Working/tools/Gem/gem.cmd")]
+            [InlineData("/bin/tools/Gem/gem.bat", "/bin/tools/Gem/gem.bat")]
+            [InlineData("./tools/Gem/gem.bat", "/Working/tools/Gem/gem.bat")]
             public void Should_Use_Tfx_Executable_From_Tool_Path_If_Provided(string toolPath, string expected)
             {
                 // Given
@@ -98,7 +98,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("/Working/tools/gem.cmd", result.Path.FullPath);
+                Assert.Equal("/Working/tools/gem.bat", result.Path.FullPath);
             }
 
             [Fact]
