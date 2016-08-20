@@ -71,8 +71,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fixtures\GemBuildRunnerFixture.cs" />
+    <Compile Include="Fixtures\GemPushRunnerFixture.cs" />
     <Compile Include="GemBuildRunnerTests.cs" />
     <Compile Include="GemFixture.cs" />
+    <Compile Include="GemPushRunnerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

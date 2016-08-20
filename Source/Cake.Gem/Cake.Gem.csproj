@@ -62,6 +62,9 @@
     <Compile Include="GemSettings.cs" />
     <Compile Include="GemTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Push\GemPushArgumentBuilder.cs" />
+    <Compile Include="Push\GemPushRunner.cs" />
+    <Compile Include="Push\GemPushSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Cake.Gem.ruleset" />
