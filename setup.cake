@@ -36,7 +36,7 @@ var solutionFilePath          = "./Source/Cake.Gem.sln";
 var solutionDirectoryPath     = "./Source/Cake.Gem";
 var title                     = "Cake.Gem";
 var resharperSettingsFileName = "Cake.Gem.sln.DotSettings";
-var repositoryOwner           = "gep13";
+var repositoryOwner           = "cake-contrib";
 var repositoryName            = "Cake.Gem";
 
 // NOTE: Only populate this, if required, but leave as is otherwise.
