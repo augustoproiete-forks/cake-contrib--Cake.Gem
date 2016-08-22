@@ -10,8 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppVeyor", "AppVeyor", "{80
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScripts", "{488C2764-3E29-4E41-A617-F006DEEB8A16}"
 	ProjectSection(SolutionItems) = preProject
-		..\build.cake = ..\build.cake
 		..\build.ps1 = ..\build.ps1
+		..\setup.cake = ..\setup.cake
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{2D933585-3E6C-4910-B08C-09C790C51B83}"
