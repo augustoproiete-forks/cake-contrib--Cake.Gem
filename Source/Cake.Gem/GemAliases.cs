@@ -7,7 +7,7 @@ using Cake.Gem.Push;
 namespace Cake.Gem
 {
     /// <summary>
-    /// <para>Contains functionality related to the<see href="https://rubygems.org/pages/download">RubyGems Package Manager</see>.</para>
+    /// <para>Contains functionality related to the <see href="https://rubygems.org/pages/download">RubyGems Package Manager</see>.</para>
     /// <para>
     /// In order to use the commands for this addin, the gem utility will need to be installed and available, or you will need to provide a ToolPath to where it can be located, and also you will need to include the following in your build.cake file to download and
     /// reference the addin from NuGet.org:
