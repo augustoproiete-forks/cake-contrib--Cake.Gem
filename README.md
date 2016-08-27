@@ -20,7 +20,7 @@ Cake.Gem is an Addin for [Cake](http://cakebuild.net/) which allows the executio
 
 ## Code Coverage
 
-[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.Gem/badge.svg)](https://coveralls.io/github/cake-contrib/Cake.Gem)
+[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.Gem/badge.svg?branch=develop)](https://coveralls.io/github/cake-contrib/Cake.Gem?branch=develop)
 
 ## Quick Links
 
