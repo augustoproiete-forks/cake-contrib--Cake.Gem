@@ -18,6 +18,10 @@ Cake.Gem is an Addin for [Cake](http://cakebuild.net/) which allows the executio
 |:--:|:--:|
 |[![Build status](https://ci.appveyor.com/api/projects/status/yl66u5c3dbn2nc73/branch/develop?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-gem/branch/develop)|[![Build status](https://ci.appveyor.com/api/projects/status/yl66u5c3dbn2nc73/branch/develop?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-gem/branch/master)|
 
+## Code Coverage
+
+[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.Gem/badge.svg)](https://coveralls.io/github/cake-contrib/Cake.Gem)
+
 ## Quick Links
 
 - [Documentation](http://cakegem.readthedocs.org/en/develop/)
