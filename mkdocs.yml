@@ -1,6 +1,6 @@
 site_name: Cake.Gem
 theme: readthedocs
-repo_url: https://github.com/gep13/Cake.Gem
+repo_url: https://github.com/cake-contrib/Cake.Gem
 
 pages:
 - Home: index.md
