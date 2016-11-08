@@ -10,12 +10,12 @@
     <licenseUrl>https://github.com/cake-contrib/Cake.Gem/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.Gem/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright (c) gep13</copyright>
+    <copyright>Copyright (c) Cake Contributions 2016 - Present</copyright>
     <tags>Cake, Script, Build, Gem</tags>
   </metadata>
   <files>
-    <file src="Cake.Gem.dll" />
-    <file src="Cake.Gem.pdb" />
-    <file src="Cake.Gem.xml" />
+    <file src="Cake.Gem.dll" target="lib\net45" />
+    <file src="Cake.Gem.pdb" target="lib\net45" />
+    <file src="Cake.Gem.xml" target="lib\net45" />
   </files>
 </package>

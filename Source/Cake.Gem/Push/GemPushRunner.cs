@@ -2,7 +2,6 @@
 using Cake.Core;
 using Cake.Core.IO;
 using Cake.Core.Tooling;
-using Cake.Gem.Build;
 
 namespace Cake.Gem.Push
 {

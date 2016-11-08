@@ -35,6 +35,7 @@ var sendMessageToTwitter = true;
 
 var rootDirectoryPath         = MakeAbsolute(Context.Environment.WorkingDirectory);
 var solutionFilePath          = "./Source/Cake.Gem.sln";
+var sourceDirectoryPath       = "./Source";
 var solutionDirectoryPath     = "./Source/Cake.Gem";
 var title                     = "Cake.Gem";
 var resharperSettingsFileName = "Cake.Gem.sln.DotSettings";
@@ -45,6 +46,9 @@ var appVeyorProjectSlug       = "cake-gem";
 
 // NOTE: Only populate this, if required, but leave as is otherwise.
 var dupFinderExcludePattern   = new string[] { rootDirectoryPath + "/Source/Cake.Gem.Tests/*.cs" };
+var testCoverageFilter = "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* ";
+var testCoverageExcludeByAttribute = "*.ExcludeFromCodeCoverage*";
+var testCoverageExcludeByFile = "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs";
 
 ///////////////////////////////////////////////////////////////////////////////
 // CAKE FILES TO LOAD IN
