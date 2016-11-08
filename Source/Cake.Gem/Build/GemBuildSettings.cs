@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Cake.Core.IO;
-
-namespace Cake.Gem.Build
+﻿namespace Cake.Gem.Build
 {
     /// <summary>
     /// Contains settings used by <see cref="GemBuildRunner"/>.

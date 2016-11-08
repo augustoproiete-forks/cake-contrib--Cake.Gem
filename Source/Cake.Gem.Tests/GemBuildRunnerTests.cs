@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Cake.Core;
 using Cake.Testing;
 using Cake.Gem.Tests.Fixtures;
