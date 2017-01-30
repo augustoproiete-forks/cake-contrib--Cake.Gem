@@ -1,7 +1,0 @@
-site_name: Cake.Gem
-theme: readthedocs
-repo_url: https://github.com/cake-contrib/Cake.Gem
-
-pages:
-- Home: index.md
-- Usage: usage.md
