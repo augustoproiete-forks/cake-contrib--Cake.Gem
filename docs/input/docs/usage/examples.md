@@ -65,16 +65,12 @@ Task("Push-Gem")
 });
 ```
 
-<div class="admonition note">
-    <p class="first admonition-title">Note</p>
-    <p class="last">
-        Despite what you might think (I know I did to start with), the Key property is NOT referring to your actual API Key that you can get from within your profile on rubygems.org.  Instead, it is referring to the name of the API Key once it is stored within your credentials file.
-    </p>
-</div>
+:::{.alert .alert-info}
+**NOTE:**
+Despite what you might think (I know I did to start with), the Key property is NOT referring to your actual API Key that you can get from within your profile on rubygems.org.  Instead, it is referring to the name of the API Key once it is stored within your credentials file.
+:::
 
-<div class="admonition attention">
-    <p class="first admonition-title">Attention</p>
-    <p class="last">
-        The above DownloadFile example can ONLY be used on Cake Version 0.16.0 and later.
-    </p>
-</div>
+:::{.alert .alert-info}
+**Attention**
+The above DownloadFile example can ONLY be used on Cake Version 0.16.0 and later.
+:::
