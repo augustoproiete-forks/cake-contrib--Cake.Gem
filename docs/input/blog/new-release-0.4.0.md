@@ -11,6 +11,14 @@ It has been a while since the last release of Cake.Gem, and this release doesn't
 
 This release includes the following:
 
+## Improvements
 
+- [__#21__](https://github.com/cake-contrib/Cake.Gem/issues/21) Change name of appveyor file
+- [__#19__](https://github.com/cake-contrib/Cake.Gem/issues/19) Switch away from using gep13.DefaultBuild and use Cake.Recipe instead
+- [__#16__](https://github.com/cake-contrib/Cake.Gem/issues/16) Update nuspec with correct information
+
+## Documentation
+
+- [__#24__](https://github.com/cake-contrib/Cake.Gem/issues/24) Add Wyam Documentation generation
 
 Please do not hesitate to reach out in the [Gitter Channel](https://gitter.im/cake-contrib/Lobby) if you have any issues using this addin.
