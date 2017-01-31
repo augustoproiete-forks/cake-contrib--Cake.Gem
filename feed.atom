@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<link rel="self" href="/" />
+	<id>/</id>
+	<title />
+	<rights>2017</rights>
+	<updated>2017-01-31T11:56:41Z</updated>
+	<entry>
+		<author>
+			<name>gep13</name>
+		</author>
+		<link href="/blog/new-release-0.4.0" />
+		<id>/blog/new-release-0.4.0</id>
+		<title>New Release - 0.4.0</title>
+		<updated>2017-01-30T00:00:00Z</updated>
+		<summary>&lt;p&gt;It has been a while since the last release of Cake.Gem, and this release doesn't really add any new functionality, but it brings with it a number of improvements to the build process, and also allows this addin to work in the soon to be released 0.18.0 version of Cake.&lt;/p&gt;</summary>
+	</entry>
+</feed>
