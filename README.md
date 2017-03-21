@@ -6,7 +6,7 @@ Cake.Gem is an Addin for [Cake](http://cakebuild.net/) which allows the executio
 
 ## Information
 
-||Stable|Pre-release|
+| |Stable|Pre-release|
 |:--:|:--:|:--:|
 |GitHub Release|-|[![GitHub release](https://img.shields.io/github/release/cake-contrib/Cake.Gem.svg)](https://github.com/cake-contrib/Cake.Gem/releases/latest)|
 |NuGet|[![NuGet](https://img.shields.io/nuget/v/Cake.Gem.svg)](https://www.nuget.org/packages/Cake.Gem)|[![NuGet](https://img.shields.io/nuget/vpre/Cake.Gem.svg)](https://www.nuget.org/packages/Cake.Gem)|
