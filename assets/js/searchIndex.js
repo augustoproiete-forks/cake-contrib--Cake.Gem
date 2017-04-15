@@ -34,30 +34,6 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"GemPushSettings",
-        content:"GemPushSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
-        title:"GemSettings",
-        content:"GemSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:2,
-        title:"GemBuildSettings",
-        content:"GemBuildSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
         title:"GemArgumentBuilder",
         content:"GemArgumentBuilder",
         description:'',
@@ -65,15 +41,7 @@ var searchModule = function() {
     });
 
     a({
-        id:4,
-        title:"GemTool",
-        content:"GemTool",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
+        id:1,
         title:"GemBuildRunner",
         content:"GemBuildRunner",
         description:'',
@@ -81,48 +49,56 @@ var searchModule = function() {
     });
 
     a({
-        id:6,
-        title:"GemPushRunner",
-        content:"GemPushRunner",
+        id:2,
+        title:"GemTool",
+        content:"GemTool",
         description:'',
         tags:''
     });
 
     a({
-        id:7,
+        id:3,
+        title:"GemSettings",
+        content:"GemSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:4,
+        title:"GemPushSettings",
+        content:"GemPushSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:5,
         title:"GemAliases",
         content:"GemAliases",
         description:'',
         tags:''
     });
 
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushSettings',
-        title:"GemPushSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemSettings',
-        title:"GemSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildSettings',
+    a({
+        id:6,
         title:"GemBuildSettings",
-        description:""
+        content:"GemBuildSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:7,
+        title:"GemPushRunner",
+        content:"GemPushRunner",
+        description:'',
+        tags:''
     });
 
     y({
         url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemArgumentBuilder_1',
         title:"GemArgumentBuilder<T>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemTool_1',
-        title:"GemTool<TSettings>",
         description:""
     });
 
@@ -133,14 +109,38 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushRunner',
-        title:"GemPushRunner",
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemTool_1',
+        title:"GemTool<TSettings>",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemSettings',
+        title:"GemSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushSettings',
+        title:"GemPushSettings",
         description:""
     });
 
     y({
         url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemAliases',
         title:"GemAliases",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildSettings',
+        title:"GemBuildSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushRunner',
+        title:"GemPushRunner",
         description:""
     });
 
