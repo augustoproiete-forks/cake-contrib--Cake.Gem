@@ -34,14 +34,6 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"GemArgumentBuilder",
-        content:"GemArgumentBuilder",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
         title:"GemBuildRunner",
         content:"GemBuildRunner",
         description:'',
@@ -49,31 +41,15 @@ var searchModule = function() {
     });
 
     a({
+        id:1,
+        title:"GemArgumentBuilder",
+        content:"GemArgumentBuilder",
+        description:'',
+        tags:''
+    });
+
+    a({
         id:2,
-        title:"GemTool",
-        content:"GemTool",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
-        title:"GemSettings",
-        content:"GemSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:4,
-        title:"GemPushSettings",
-        content:"GemPushSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
         title:"GemAliases",
         content:"GemAliases",
         description:'',
@@ -81,9 +57,33 @@ var searchModule = function() {
     });
 
     a({
-        id:6,
+        id:3,
+        title:"GemTool",
+        content:"GemTool",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:4,
         title:"GemBuildSettings",
         content:"GemBuildSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:5,
+        title:"GemPushSettings",
+        content:"GemPushSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:6,
+        title:"GemSettings",
+        content:"GemSettings",
         description:'',
         tags:''
     });
@@ -97,32 +97,14 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemArgumentBuilder_1',
-        title:"GemArgumentBuilder<T>",
-        description:""
-    });
-
-    y({
         url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildRunner',
         title:"GemBuildRunner",
         description:""
     });
 
     y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemTool_1',
-        title:"GemTool<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemSettings',
-        title:"GemSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushSettings',
-        title:"GemPushSettings",
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemArgumentBuilder_1',
+        title:"GemArgumentBuilder<T>",
         description:""
     });
 
@@ -133,8 +115,26 @@ var searchModule = function() {
     });
 
     y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemTool_1',
+        title:"GemTool<TSettings>",
+        description:""
+    });
+
+    y({
         url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildSettings',
         title:"GemBuildSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushSettings',
+        title:"GemPushSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemSettings',
+        title:"GemSettings",
         description:""
     });
 

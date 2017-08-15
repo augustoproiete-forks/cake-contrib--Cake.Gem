@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<link rel="self" href="http://cake-contrib.github.io/Cake.Gem" />
 	<id>http://cake-contrib.github.io/Cake.Gem</id>
-	<title />
+	<title>Cake.Gem</title>
 	<rights>2017</rights>
-	<updated>2017-04-15T13:25:38Z</updated>
+	<updated>2017-08-15T21:38:04Z</updated>
 	<entry>
 		<author>
 			<name>gep13</name>
