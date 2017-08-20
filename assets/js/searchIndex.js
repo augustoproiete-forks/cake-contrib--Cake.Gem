@@ -50,16 +50,16 @@ var searchModule = function() {
 
     a({
         id:2,
-        title:"GemAliases",
-        content:"GemAliases",
+        title:"GemPushRunner",
+        content:"GemPushRunner",
         description:'',
         tags:''
     });
 
     a({
         id:3,
-        title:"GemTool",
-        content:"GemTool",
+        title:"GemPushSettings",
+        content:"GemPushSettings",
         description:'',
         tags:''
     });
@@ -74,8 +74,8 @@ var searchModule = function() {
 
     a({
         id:5,
-        title:"GemPushSettings",
-        content:"GemPushSettings",
+        title:"GemAliases",
+        content:"GemAliases",
         description:'',
         tags:''
     });
@@ -90,8 +90,8 @@ var searchModule = function() {
 
     a({
         id:7,
-        title:"GemPushRunner",
-        content:"GemPushRunner",
+        title:"GemTool",
+        content:"GemTool",
         description:'',
         tags:''
     });
@@ -109,20 +109,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemAliases',
-        title:"GemAliases",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemTool_1',
-        title:"GemTool<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildSettings',
-        title:"GemBuildSettings",
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushRunner',
+        title:"GemPushRunner",
         description:""
     });
 
@@ -133,14 +121,26 @@ var searchModule = function() {
     });
 
     y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildSettings',
+        title:"GemBuildSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemAliases',
+        title:"GemAliases",
+        description:""
+    });
+
+    y({
         url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemSettings',
         title:"GemSettings",
         description:""
     });
 
     y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushRunner',
-        title:"GemPushRunner",
+        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemTool_1',
+        title:"GemTool<TSettings>",
         description:""
     });
 
