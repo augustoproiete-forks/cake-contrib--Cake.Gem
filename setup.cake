@@ -8,12 +8,9 @@ BuildParameters.SetParameters(context: Context,
                             title: "Cake.Gem",
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.Gem",
-                            appVeyorAccountName: "cakecontrib",
-                            webHost: "cake-contrib.github.io",
-                            webLinkRoot: "Cake.Gem",
-                            webBaseEditUrl: "https://github.com/cake-contrib/Cake.Gem/tree/develop/docs/input/");
+                            appVeyorAccountName: "cakecontrib");
 
-BuildParameters.PrintParamters(Context);
+BuildParameters.PrintParameters(Context);
 
 ToolSettings.SetToolSettings(context: Context,
                             dupFinderExcludePattern: new string[] { 
