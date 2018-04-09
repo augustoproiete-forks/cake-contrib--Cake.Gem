@@ -126,7 +126,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("build \"/Working/c:/temp/text.config\" --force", result.Args);
+                Assert.Equal("build \"c:/temp/text.config\" --force", result.Args);
             }
 
             [Fact]
@@ -140,7 +140,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("build \"/Working/c:/temp/text.config\" -V", result.Args);
+                Assert.Equal("build \"c:/temp/text.config\" -V", result.Args);
             }
 
             [Fact]
@@ -154,7 +154,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("build \"/Working/c:/temp/text.config\" -q", result.Args);
+                Assert.Equal("build \"c:/temp/text.config\" -q", result.Args);
             }
 
             [Fact]
@@ -168,7 +168,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("build \"/Working/c:/temp/text.config\" --config-file \"/Working/test.config\"", result.Args);
+                Assert.Equal("build \"c:/temp/text.config\" --config-file \"/Working/test.config\"", result.Args);
             }
 
             [Fact]
@@ -182,7 +182,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("build \"/Working/c:/temp/text.config\" --backtrace", result.Args);
+                Assert.Equal("build \"c:/temp/text.config\" --backtrace", result.Args);
             }
 
             [Fact]
@@ -196,7 +196,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("build \"/Working/c:/temp/text.config\" --debug", result.Args);
+                Assert.Equal("build \"c:/temp/text.config\" --debug", result.Args);
             }
         }
     }
