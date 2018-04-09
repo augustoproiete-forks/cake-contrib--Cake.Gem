@@ -126,7 +126,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" --key \"rubygems\"", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" --key \"rubygems\"", result.Args);
             }
 
             [Fact]
@@ -140,7 +140,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" --host \"http://localhost:8989\"", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" --host \"http://localhost:8989\"", result.Args);
             }
 
             [Fact]
@@ -154,7 +154,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" -p \"http://localhost:8989\"", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" -p \"http://localhost:8989\"", result.Args);
             }
 
             [Fact]
@@ -168,7 +168,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" -V", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" -V", result.Args);
             }
 
             [Fact]
@@ -182,7 +182,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" -q", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" -q", result.Args);
             }
 
             [Fact]
@@ -196,7 +196,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" --config-file \"/Working/test.config\"", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" --config-file \"/Working/test.config\"", result.Args);
             }
 
             [Fact]
@@ -210,7 +210,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" --backtrace", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" --backtrace", result.Args);
             }
 
             [Fact]
@@ -224,7 +224,7 @@ namespace Cake.Gem.Tests
                 var result = fixture.Run();
 
                 // Then
-                Assert.Equal("push \"/Working/c:/temp/test.gem\" --debug", result.Args);
+                Assert.Equal("push \"c:/temp/test.gem\" --debug", result.Args);
             }
         }
     }
