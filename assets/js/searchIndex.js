@@ -1,147 +1,164 @@
 
-var camelCaseTokenizer = function (obj) {
+var camelCaseTokenizer = function (builder) {
+
+  var pipelineFunction = function (token) {
     var previous = '';
-    return obj.toString().trim().split(/[\s\-]+|(?=[A-Z])/).reduce(function(acc, cur) {
-        var current = cur.toLowerCase();
-        if(acc.length === 0) {
-            previous = current;
-            return acc.concat(current);
-        }
-        previous = previous.concat(current);
-        return acc.concat([current, previous]);
+    // split camelCaseString to on each word and combined words
+    // e.g. camelCaseTokenizer -> ['camel', 'case', 'camelcase', 'tokenizer', 'camelcasetokenizer']
+    var tokenStrings = token.toString().trim().split(/[\s\-]+|(?=[A-Z])/).reduce(function(acc, cur) {
+      var current = cur.toLowerCase();
+      if (acc.length === 0) {
+        previous = current;
+        return acc.concat(current);
+      }
+      previous = previous.concat(current);
+      return acc.concat([current, previous]);
     }, []);
+
+    // return token for each string
+    // will copy any metadata on input token
+    return tokenStrings.map(function(tokenString) {
+      return token.clone(function(str) {
+        return tokenString;
+      })
+    });
+  }
+
+  lunr.Pipeline.registerFunction(pipelineFunction, 'camelCaseTokenizer')
+
+  builder.pipeline.before(lunr.stemmer, pipelineFunction)
 }
-lunr.tokenizer.registerFunction(camelCaseTokenizer, 'camelCaseTokenizer')
 var searchModule = function() {
+    var documents = [];
     var idMap = [];
-    function y(e) { 
-        idMap.push(e); 
+    function a(a,b) { 
+        documents.push(a);
+        idMap.push(b); 
     }
+
+    a(
+        {
+            id:0,
+            title:"GemArgumentBuilder",
+            content:"GemArgumentBuilder",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem/GemArgumentBuilder_1',
+            title:"GemArgumentBuilder<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:1,
+            title:"GemBuildRunner",
+            content:"GemBuildRunner",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem.Build/GemBuildRunner',
+            title:"GemBuildRunner",
+            description:""
+        }
+    );
+    a(
+        {
+            id:2,
+            title:"GemPushRunner",
+            content:"GemPushRunner",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem.Push/GemPushRunner',
+            title:"GemPushRunner",
+            description:""
+        }
+    );
+    a(
+        {
+            id:3,
+            title:"GemAliases",
+            content:"GemAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem/GemAliases',
+            title:"GemAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
+            title:"GemTool",
+            content:"GemTool",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem/GemTool_1',
+            title:"GemTool<TSettings>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"GemPushSettings",
+            content:"GemPushSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem.Push/GemPushSettings',
+            title:"GemPushSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"GemBuildSettings",
+            content:"GemBuildSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem.Build/GemBuildSettings',
+            title:"GemBuildSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:7,
+            title:"GemSettings",
+            content:"GemSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Gem/api/Cake.Gem/GemSettings',
+            title:"GemSettings",
+            description:""
+        }
+    );
     var idx = lunr(function() {
-        this.field('title', { boost: 10 });
+        this.field('title');
         this.field('content');
-        this.field('description', { boost: 5 });
-        this.field('tags', { boost: 50 });
+        this.field('description');
+        this.field('tags');
         this.ref('id');
-        this.tokenizer(camelCaseTokenizer);
+        this.use(camelCaseTokenizer);
 
         this.pipeline.remove(lunr.stopWordFilter);
         this.pipeline.remove(lunr.stemmer);
-    });
-    function a(e) { 
-        idx.add(e); 
-    }
-
-    a({
-        id:0,
-        title:"GemBuildRunner",
-        content:"GemBuildRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
-        title:"GemSettings",
-        content:"GemSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:2,
-        title:"GemPushRunner",
-        content:"GemPushRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
-        title:"GemTool",
-        content:"GemTool",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:4,
-        title:"GemArgumentBuilder",
-        content:"GemArgumentBuilder",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
-        title:"GemPushSettings",
-        content:"GemPushSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:6,
-        title:"GemAliases",
-        content:"GemAliases",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:7,
-        title:"GemBuildSettings",
-        content:"GemBuildSettings",
-        description:'',
-        tags:''
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildRunner',
-        title:"GemBuildRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemSettings',
-        title:"GemSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushRunner',
-        title:"GemPushRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemTool_1',
-        title:"GemTool<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemArgumentBuilder_1',
-        title:"GemArgumentBuilder<T>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Push/GemPushSettings',
-        title:"GemPushSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem/GemAliases',
-        title:"GemAliases",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Gem/Cake.Gem/api/Cake.Gem.Build/GemBuildSettings',
-        title:"GemBuildSettings",
-        description:""
+        documents.forEach(function (doc) { this.add(doc) }, this)
     });
 
     return {
